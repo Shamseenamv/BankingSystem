@@ -1,2 +1,11 @@
 # BankingSystem
 A python program to replicate a Banking system. The following features are mandatory:  1. Account login  2. Amount Depositing  3. Amount Withdrawal
+The provided Python code defines a simple banking system using a class named Bank. Here's a description of the key components and functionalities of the code:
+Class Definition:The Bank class is defined with an __init__ method to initialize the bank object with an empty dictionary to store account information.
+Account Creation (create_account method):This method is responsible for creating a new account.It takes parameters such as account_number, name, and balance. It validates the initial balance as a Decimal value and checks if the account number is not already in use.If the validation is successful, it prompts the user to set a password for the account and creates the account with the provided information.
+Account Login (login method): The login method checks if the provided account number and password match any existing account.If the login is successful, it prints a message indicating a successful login and returns True. Otherwise, it prints an error message and returns False.
+Deposit (deposit method): The deposit method allows users to deposit a specified amount into their account. It validates the amount as a Decimal value and ensures that it is a positive value. If the validation is successful and the account exists, it adds the amount to the account balance.
+Withdrawal (withdraw method): The withdraw method enables users to withdraw a specified amount from their account.Similar to the deposit method, it validates the withdrawal amount and checks if the account and password are valid. It ensures that the withdrawal amount is positive and that the account has sufficient balance before deducting the amount.
+User Interface (Main Loop): The main program runs a loop that presents a simple menu to the user. The user can choose options such as creating an account, logging in, depositing, withdrawing, or quitting the program.
+Decimal Module: The code uses the Decimal class from the decimal module to handle monetary values with precision, which is important in financial applications.
+Welcome Message: The program starts with a welcome message, indicating the name of the bank ("XYZ bank").
